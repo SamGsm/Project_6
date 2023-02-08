@@ -1,0 +1,40 @@
+Разберемся с распределением количества показов и кликов. Посчитайте среднее количество показов и среднее количество кликов на объявления за весь период (округлите до целых).
+
+Нарисуйте график распределения показов на объявление за весь период.
+
+А теперь давайте посчитаем скользящее среднее показов с окном 2. Какое значение скользящего среднего получим за 6 апреля 2019 года (ответ округлите до целых)?
+
+Скользящее среднее часто используется для поиска аномалий в данных. Давайте попробуем нанести на один график значения арифметического среднего по дням и скользящего среднего количества показов. В какой день наблюдается наибольшая разница по модулю между арифметическим средним и скользящим средним? Дни, в которых скользящее среднее равно NaN, не учитываем. 
+
+*Напишите функцию, которая найдет проблемное объявление (с наибольшим/наименишим количеством показов) в день, в который была замечена самая большая по модулю аномалия. 
+
+*Теперь подгрузим данные по рекламным клиентам и найдем среднее количество дней от даты создания рекламного клиента и первым запуском рекламного объявления этим клиентом.
+
+*Вычислите конверсию из создания рекламного клиента в запуск первой рекламы в течение не более 365 дней. Ответ дайте в процентах и округлите до сотых. (Фильтровать нужно по значению в формате pd.Timedelta(365, unit='d'))
+
+*Давайте разобъем наших клиентов по промежуткам от создания до запуска рекламного объявления, равным 30. Определите, сколько уникальных клиентов запустили свое первое объявление в первый месяц своего существования (от 0 до 30 дней). Список промежутков для метода pd.cut – [0, 30, 90, 180, 365]
+
+*А теперь давайте выведем на интерактивный график эти категории с количеством уникальных клиентов в них.
+
+
+
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+Let's deal with the distribution of the number of impressions and clicks. Calculate the average number of impressions and the average number of clicks on ads for the entire period (round up to integers).
+
+Draw a graph of the distribution of impressions per ad for the entire period.
+
+Now let's calculate the moving average of impressions with a window of 2. What is the moving average value for April 6, 2019 (round the answer to integers)?
+
+The moving average is often used to find anomalies in data. Let's try to plot the values of the arithmetic average by days and the moving average of the number of impressions on one chart. On which day is the greatest difference in modulus between the arithmetic average and the moving average? Days in which the moving average is equal to NaN are not taken into account.
+
+*Write a function that will find the problematic ad (with the most/least impressions) on the day that the biggest anomaly was seen modulo.
+
+*Now let's load data on advertising clients and find the average number of days from the date of creation of an advertising client and the first launch of an ad by this client.
+
+*Calculate the conversion from ad client creation to first ad launch within a maximum of 365 days. Give your answer as a percentage and round to the nearest hundredth. (You need to filter by value in the format pd.Timedelta(365, unit='d'))
+
+*Let's break down our customers by 30 ad creation to ad launch times. Determine how many unique customers launched their first ad in their first month of existence (0 to 30 days). Range list for pd.cut method - [0, 30, 90, 180, 365]
+
+*Now let's display these categories on an interactive chart with the number of unique customers in them.
